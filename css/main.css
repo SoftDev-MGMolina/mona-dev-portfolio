@@ -1,0 +1,307 @@
+.home-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+}
+
+.greetings-grid{
+    display: grid;
+    grid-template-rows: 80px 65px 1fr 65px;
+    row-gap: 10px;
+}
+
+.greetings, 
+.my-photo-grid,
+.download-cv{
+    display: flex;
+}
+
+.greetings,
+.section-title,
+.contact-me-big-title{
+    letter-spacing: 2px;
+    font-weight: bold;
+    /* background: linear-gradient(45deg, #f3f2c9, white);
+    background-clip: text;
+    color: transparent; */
+}
+
+.greetings{
+    align-items: end;
+    font-size: 25px;
+}
+
+.greetings-name{
+    font-size: 55px;
+    font-weight: 900;
+    /* text-shadow: 5px 10px 8px white; */
+    color: #0062ff;
+}
+
+.greetings-info{
+    padding-top: 25px;
+}
+
+.my-photo-grid{
+    align-items: center;
+    justify-content: center;
+}
+
+.my-photo-container{
+    width: 500px;
+    height: 500px;
+}
+
+.my-photo{
+    width: 100%;
+    height: 100%;
+    /* background-color: #041c25; */
+    object-fit: cover;
+    object-position: 80% 20%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 200px;
+    filter: drop-shadow(1px 1px 10px white);
+    /* box-shadow: 2px 5px 8px rgba(250, 250, 250, 0.3); */
+}
+
+.download-cv-button{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: rgb(34, 40, 47);
+    padding: 20px 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+.download-cv-button:hover{
+    background-color: rgb(0, 98, 255);
+    box-shadow: 2px 5px 8px rgb(15, 25, 41);
+    transition: background-color 0.15s, box-shadow 0.15s;
+}
+
+.section-title,
+.contact-me-big-title{
+    text-align: center;
+    font-size: 40px;
+}
+
+.projects-section{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.projects-grid,
+.skills-grid,
+.certificate-awards-grid{
+    margin-top: 60px;
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    column-gap: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.project-section-left,
+.project-section-right,
+.project-photos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-section-center{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+
+
+.previous-button,
+.next-button{
+    background-color: rgb(27, 31, 36);
+    border: none;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+}
+
+.previous-button img,
+.next-button img{
+    width: 35%;
+}
+
+.previous-button:hover,
+.next-button:hover{
+    background-color: #01040f;
+    box-shadow: 2px 5px 8px rgba(250, 250, 250, 0.3);
+    transition: background-color 0.15s, box-shadow 0.15s;
+}
+
+.project-photos{
+    width: 100%;
+    height: 100%;
+}
+
+.project-photos img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-details {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+.project-title-container,
+.certificate-awards-title-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+        /* text-shadow: 5px 10px 8px rgba(1, 15, 12, 1); */
+}
+
+.project-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 20px;
+    place-items: center;
+}
+
+.skills-container{
+    width: 125px;
+    height: 125px;
+}
+
+.skills-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.certificate-awards-row{
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 100px;
+}
+
+.certificate-awards-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+}
+
+.certificate-awards-photos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.certificate-awards-photos-temp1{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    box-shadow: 2px 5px 8px rgba(250, 250, 250, 0.3);
+}
+
+.certificate-awards-photos-temp2{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    box-shadow: 2px 5px 8px rgba(250, 250, 250, 0.3);
+}
+
+.certificate-awards-info{
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+}
+
+.certificate-awards-subtitle{
+    font-size: 15px;
+    line-height: 30px;
+    text-shadow: 5px 10px 8px rgba(1, 15, 12, 1);
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+}
+
+.certificate-awards-description{
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.contact-me-section{
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.contact-me-mini-title{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    text-shadow: 5px 10px 8px rgba(1, 15, 12, 1);
+}
+
+.contact-me-big-title{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+.contact-me-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px;
+}
+
+.contact-me-button{
+    background: linear-gradient(45deg, rgba(40, 116, 121, 0.5), rgba(198, 231, 250, 0.5));
+    border: none;
+    border-radius: 60px;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-me-button img{
+    width: 50%;
+}
+
+.contact-me-button:hover{
+    background: linear-gradient(45deg, rgb(40, 116, 121), rgb(198, 231, 250));
+    box-shadow: 2px 5px 8px rgba(1, 15, 12, 1);
+    transition: background-color 0.15s, box-shadow 0.15s;
+}
+
+.contact-me-button:hover img{
+    width: 60%;
+    transition: width 0.15s;
+}
