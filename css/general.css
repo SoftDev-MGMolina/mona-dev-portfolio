@@ -59,13 +59,39 @@ iframe{
   height: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 1200px){
+  section{
+    padding: 80px 60px;
+  }
+}
+
+@media (max-width: 950px){
+  section{
+    padding: 80px 50px;
+  }
+
+  ul li{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 750px){
+  section{
+    padding: 80px 30px;
+  }
+}
+
+/* @media screen and (min-width: 400px) {
   section {
-    padding: 50px 30px;
+    padding: 50px 50px;
   }
 
   iframe{
     height: 350px;
     margin-bottom: 30px;
   }
-}
+
+  ul li{
+    font-size: 12px;
+  }
+} */

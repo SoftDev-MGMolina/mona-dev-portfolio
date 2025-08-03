@@ -302,10 +302,88 @@
     transition: width 0.15s;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 1200px){
+    .greetings{
+        font-size: 20px;
+    }
+
+    .greetings-name{
+        font-size: 43px;
+    }
+
+    .greetings-info{
+        padding-top: 10px;
+    }
+
+    .greetings-info p{
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .my-photo-container{
+        width: 400px;
+        height: 400px;
+    }
+
+    .project-section-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 950px){
+    .greetings{
+        font-size: 18px;
+    }
+
+    .greetings-name{
+        font-size: 40px;
+    }
+    .my-photo-container{
+        width: 350px;
+        height: 350px;
+    }
+
+    .greetings-name{
+        font-size: 40px;
+    }
+    
+    .project-section-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 750px){
     .home-section{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
+    }
+    .greetings{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        font-size: 18px;
+    }
+
+    .greetings-name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+    }
+
+    .download-cv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* @media screen and (min-width: 400px) {
+    .home-section{
+        display: grid;
+        grid-template-columns: auto;
     }
 
     .greetings,
@@ -313,14 +391,15 @@
         display: flex;
         justify-content: center;
     }
-
+    
     .greetings-name{
         font-size: 45px;
     }
 
     .greetings-info p{
-        font-size: 14px;
-        text-indent: 1rem;
+        font-size: 12px;
+        text-indent: 2rem;
+        line-height: 2rem;
         text-align: justify;
         margin-top: 0;
         margin-bottom: 30px;
@@ -338,6 +417,11 @@
     {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .project-title{
+        font-size: 30px;
+        line-height: 3rem;
     }
 
     .project-details{
@@ -359,6 +443,23 @@
         column-gap: 1px;
     }
 
+    .certificate-awards-title{
+        font-size: 30px;
+        line-height: 3rem;
+    }
+
+    .certificate-awards-subtitle {
+        font-size: 20px;
+        line-height: 3rem;
+        text-align: center;
+    }
+
+    .certificate-awards-description {
+        font-size: 25px;
+        line-height: 3rem;
+        text-align: justify;
+    }
+
     .certificate-awards-info{
         margin-top: 40px;
         margin-bottom: 40px;
@@ -369,8 +470,8 @@
     }
 
     .contact-me-links{
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 250px;
+        padding-right: 250px;
     }
 
     .contact-me-button {
@@ -390,4 +491,4 @@
         width: 60%;
         transition: width 0.15s;
     }
-}
+} */
