@@ -86,59 +86,30 @@
     font-size: 40px;
 }
 
-.projects-section{
-    padding-left: 0;
-    padding-right: 0;
-}
-
 .projects-grid,
 .skills-grid,
-.certificate-awards-grid{
+.project-section-grid,
+.certificate-awards-grid,
+.project-section-grid2{
     margin-top: 60px;
 }
 
-.projects-grid{
+.project-section-grid{
     display: grid;
-    grid-template-columns: 100px 1fr 100px;
+    grid-template-columns: 1.5fr 1fr;
     column-gap: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
-.project-section-left,
-.project-section-right,
-.project-photos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.project-section-center{
+.project-section-grid2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
 }
 
-
-.previous-button,
-.next-button{
-    background-color: rgb(27, 31, 36);
-    border: none;
-    border-radius: 50px;
-    width: 90px;
-    height: 90px;
-}
-
-.previous-button img,
-.next-button img{
-    width: 35%;
-}
-
-.previous-button:hover,
-.next-button:hover{
-    background-color: #01040f;
-    box-shadow: 2px 5px 8px rgba(250, 250, 250, 0.3);
-    transition: background-color 0.15s, box-shadow 0.15s;
+.project-photos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-photos{
@@ -153,11 +124,11 @@
 
 .project-details {
     display: grid;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: auto;
 }
 
 .project-title-container,
-.certificate-awards-title-container{
+.certificate-awards-title{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,11 +139,32 @@
 }
 
 .project-info-container{
+    padding-top: 20px;
+}
+
+.photoshop-img,
+.photoshop-img1{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
+    width: 500px;
 }
 
+.photoshop-img img,
+.photoshop-img1  img{
+    width: 100%;
+}
+
+.photoshop-projects{
+    margin-top: 60px;
+}
+
+.photoshop-projects-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+}
 
 .skills-grid{
     display: grid;
@@ -193,6 +185,7 @@
     object-fit: contain;
 }
 
+.project-section-row,
 .certificate-awards-row{
     display: grid;
     grid-template-rows: auto;
@@ -231,23 +224,26 @@
 
 .certificate-awards-info{
     display: grid;
-    grid-template-rows: 0.5fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 10px;
 }
 
 .certificate-awards-subtitle{
     font-size: 15px;
-    line-height: 30px;
     text-shadow: 5px 10px 8px rgba(1, 15, 12, 1);
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
-    display: block;
-    margin-top: 20px;
 }
 
 .certificate-awards-description{
-    text-align: center;
     font-size: 15px;
     line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .contact-me-section{
@@ -304,4 +300,94 @@
 .contact-me-button:hover img{
     width: 60%;
     transition: width 0.15s;
+}
+
+@media screen and (max-width: 600px) {
+    .home-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .greetings,
+    .greetings-name{
+        display: flex;
+        justify-content: center;
+    }
+
+    .greetings-name{
+        font-size: 45px;
+    }
+
+    .greetings-info p{
+        font-size: 14px;
+        text-indent: 1rem;
+        text-align: justify;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .download-cv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photoshop-projects-grid,
+    .project-section-grid,
+    .project-section-grid2
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .project-details{
+        margin-top: 40px;
+    }
+
+    .photoshop-img{
+        margin-bottom: 40px;
+    }
+    
+    .skills-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .certificate-awards-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 1px;
+    }
+
+    .certificate-awards-info{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .certificate-awards-row{
+        row-gap: 30px;
+    }
+
+    .contact-me-links{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .contact-me-button {
+        border-radius: 40px;
+        height: 80px;
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-me-button img {
+        width: 50%;
+    }
+
+    .contact-me-button:hover img {
+        width: 60%;
+        transition: width 0.15s;
+    }
 }

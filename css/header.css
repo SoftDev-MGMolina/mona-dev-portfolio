@@ -9,6 +9,14 @@
     right: 180px;
 }
 
+@media screen and (max-width: 600px){
+    .header-container{
+        left: 20px;
+        right: 20px;
+        font-size: 12px;
+    }
+}
+
 .header-links a{
     cursor: pointer;
     white-space: nowrap;
@@ -20,3 +28,10 @@
     text-shadow: 2px 1px 2px rgb(107, 153, 143);
     transition: text-shadow 0.15s;
 }
+
+@media screen and (max-width: 600px) {
+    .header-container:hover {
+        font-size: 13px;
+    }
+}
+
